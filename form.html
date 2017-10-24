@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script src="public/app.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+
+         Nom :  {{firstName}}
+       <form   ng-submit="valider(etudiant)">
+
+           Nom :   <input type="text"  ng-model="etudiant.nom" >
+           Prenom :   <input type="text" ng-model="etudiant.prenom">
+           Adresse :   <input type="text" ng-model="etudiant.adresse">
+
+           <button>valider</button>
+
+       </form>
+</body>
+</html>
